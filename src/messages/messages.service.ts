@@ -50,7 +50,6 @@ export class MessagesService {
         const args = JSON.parse(response.choices[0].message.function_call.arguments);
         const sentiment = args.sentiment;
         console.log(`User sentiment: ${sentiment}`);
-        return response;
     });
      }
 
